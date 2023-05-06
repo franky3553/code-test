@@ -14,21 +14,6 @@ body {
   flex-direction: column;
   padding: 20px;
   box-sizing: border-box;
-  opacity: 0; /* Inicialmente oculto */
-  transition: opacity 1s ease-in-out;
-}
-
-.show-animation {
-  opacity: 1 !important;
-  transition-delay: 0.5s;
-}
-
-.show-animation.header {
-  transition-delay: 1s;
-}
-
-.show-animation.input-line {
-  transition-delay: 1.5s;
 }
 
 .header, .output-container {
@@ -54,7 +39,9 @@ body {
 
 .input-container {
   display: flex;
-  border: 1px solid #0f0; /* Borde verde */
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+  border: 1px solid #0f0;
   border-radius: 5px;
   padding: 5px;
 }
@@ -62,7 +49,7 @@ body {
 .input-line {
   flex-grow: 1;
   display: flex;
-  margin-top: 10px;
+  align-items: center; /* Centrado vertical */
 }
 
 .prompt {
@@ -78,8 +65,3 @@ body {
   outline: none;
 }
 
-.number {
-  font-size: 36px;
-  font-weight: bold;
-  color: #f00; /* Color rojo */
-}
