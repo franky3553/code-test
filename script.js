@@ -43,3 +43,11 @@ inputElement.addEventListener('keydown', function(event) {
 window.addEventListener('load', function() {
   inputElement.focus();
 });
+// Enfocar automáticamente el campo de entrada al cargar la página
+window.addEventListener('load', function() {
+  // Aplicar animación estilo Matrix
+  document.body.style.backgroundColor = '#000'; // Establecer el fondo negro
+  setTimeout(function() {
+    document.querySelector('.terminal').style.opacity = '1'; // Mostrar la terminal gradualmente
+  }, 2000); // Retardo de 2 segundos
+});
