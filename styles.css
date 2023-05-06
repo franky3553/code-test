@@ -1,0 +1,70 @@
+body {
+  background-color: #000;
+  color: #0f0;
+  font-family: 'Courier New', monospace;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.terminal {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header, .output-container {
+  flex-grow: 1;
+  overflow: auto;
+  border: 1px solid #0f0; /* Borde verde */
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Fondo negro */
+  margin-bottom: 10px;
+}
+
+.output-container {
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  border: 1px solid #0f0; /* Borde verde */
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.input-line {
+  flex-grow: 1;
+  display: flex;
+  margin-top: 10px;
+}
+
+.prompt {
+  color: #0f0;
+  margin-right: 5px;
+}
+
+#command-input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: #0f0;
+  outline: none;
+}
+
+.number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #f00; /* Color rojo */
+}
