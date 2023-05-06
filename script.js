@@ -43,8 +43,23 @@ inputElement.addEventListener('keydown', function(event) {
 window.addEventListener('load', function() {
   // Aplicar animación estilo interfaz gráfica futurista
   document.body.style.backgroundColor = '#000'; // Establecer el fondo negro
-  document.querySelector('.terminal').classList.add('show-animation'); // Agregar clase para mostrar la animación
+
+  // Mostrar el cuadro de texto
+  document.querySelector('.input-container').classList.add('show-animation');
+
+  // Mostrar la sección 1
   setTimeout(function() {
-    document.querySelector('.terminal').style.opacity = '1'; // Mostrar la terminal gradualmente
+    document.querySelector('.header').classList.add('show-animation');
+    document.querySelector('.output-container').classList.add('show-animation');
   }, 1000); // Retardo de 1 segundo
+
+  // Mostrar la sección 2
+  setTimeout(function() {
+    document.querySelector('.input-line').classList.add('show-animation');
+  }, 1500); // Retardo de 1.5 segundos
+
+  // Mostrar la terminal gradualmente
+  setTimeout(function() {
+    document.querySelector('.terminal').style.opacity = '1';
+  }, 2000); // Retardo de 2 segundos
 });

@@ -15,13 +15,20 @@ body {
   padding: 20px;
   box-sizing: border-box;
   opacity: 0; /* Inicialmente oculto */
-  transform: scale(0.5);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .show-animation {
   opacity: 1 !important;
-  transform: scale(1) !important;
+  transition-delay: 0.5s;
+}
+
+.show-animation.header {
+  transition-delay: 1s;
+}
+
+.show-animation.input-line {
+  transition-delay: 1.5s;
 }
 
 .header, .output-container {
