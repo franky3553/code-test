@@ -15,7 +15,19 @@ body {
   padding: 20px;
   box-sizing: border-box;
   opacity: 0; /* Inicialmente oculto */
-  transition: opacity 2s ease-in-out; /* Transición de 2 segundos */
+  transform: translateY(100%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+@keyframes showTerminal {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .header, .output-container {
