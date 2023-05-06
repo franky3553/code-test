@@ -37,6 +37,10 @@ body {
   margin-bottom: 10px;
 }
 
+.input-container-wrapper {
+  margin-right: 20px; /* Margen derecho */
+}
+
 .input-container {
   position: fixed;
   bottom: 0;
@@ -48,7 +52,7 @@ body {
   border: 1px solid #0f0;
   border-radius: 5px;
   padding: 5px;
-  margin-right: 10px;
+  margin-bottom: 10px; /* Margen inferior para separar del contenido */
 }
 
 
